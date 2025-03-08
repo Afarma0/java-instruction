@@ -81,4 +81,14 @@ public class MyConsole {
 	public static void printLine(String msg) {
 		System.out.println(msg);
 	}
+	
+	public static void printHeader(String header, String sep) {
+		printLine(header);
+		String seperatorLine = sep.repeat(header.length());
+		printLine(seperatorLine);
+	}
+		
+		public static void printHeader(String header) {
+			printHeader(header, "=");
+	}
 }
